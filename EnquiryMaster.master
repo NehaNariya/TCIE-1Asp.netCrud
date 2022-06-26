@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EnquiryMaster.master.cs" Inherits="EnquiryMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <!--Header-->
+         <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
+        <center><h1><asp:Label ID="Label1" runat="server" Text="Enquiry Matser"></asp:Label></h1></center>
+        <hr />
+        <hr />
+      
+        <center>
+        <a href ="NewEnquiry.aspx">New Enquiry</a> | &nbsp;
+        <a href ="UpdateEnquiry.aspx">Update Enquiry</a> | &nbsp;
+        <a href ="RemoveEnquiry.aspx">Remove Enquiry</a> | &nbsp;
+        <a href ="ViewEnquiry.aspx">View Enquiry</a> | &nbsp;
+
+          
+        
+       </center>
+
+        <!--Header-->
+
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <!--footer-->
+          <hr />
+        <p><b>Contact Us: </b><br />
+            Horizon Systems,<br />
+            Kolkata, India
+        </p>
+        <!--footer-->
+      
+
+    </form>
+</body>
+</html>
